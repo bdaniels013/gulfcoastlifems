@@ -6,10 +6,7 @@ import Image from "next/image"
 export default function Hero() {
   return (
     <section className="relative overflow-hidden rounded-3xl ring-1 ring-sand/60">
-      <div className="absolute inset-0">
-        <Image src="/biloxi beach sunset.jpg" alt="Biloxi beach at sunset" fill sizes="100vw" className="object-cover" priority />
-        <div className="absolute inset-0 bg-white/50" />
-      </div>
+      
       <Parallax intensity={0.06} className="bg-gradient-to-br from-aqua/20 via-sand to-gold/20 p-10 md:p-16">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-serif text-navy">Gulf Coast Life MS</h1>
