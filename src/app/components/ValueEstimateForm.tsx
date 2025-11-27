@@ -12,7 +12,7 @@ export default function ValueEstimateForm() {
     <form onSubmit={onSubmit} className="grid gap-3">
       <input placeholder="Address" required className="rounded-md border border-sand bg-white px-4 py-3" />
       <input placeholder="Email" type="email" required className="rounded-md border border-sand bg-white px-4 py-3" />
-      <button className="rounded-full bg-gold text-white px-5 py-3" type="submit">Request Estimate</button>
+      <button className="w-full rounded-full bg-gold text-white px-5 py-3" type="submit">Request Estimate</button>
     </form>
   )
 }
