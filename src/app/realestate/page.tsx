@@ -8,6 +8,7 @@ import InlineEmailForm from "../components/InlineEmailForm"
 import ValueEstimateForm from "../components/ValueEstimateForm"
 import Parallax from "../components/Parallax"
 import SectionNav from "../components/SectionNav"
+import FiltersChip from "../components/FiltersChip"
 import Image from "next/image"
 
 export default function Page() {
@@ -28,7 +29,7 @@ export default function Page() {
   ]
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 pb-28 md:pb-0">
       <div className="bg-navy text-white rounded-xl p-4 text-sm flex flex-wrap gap-4 items-center justify-between">
         <div className="flex items-center gap-3">
           <Image src="/c21-header.png" alt="CENTURY 21 J. Carter & Company" width={140} height={36} />
@@ -79,6 +80,7 @@ export default function Page() {
         { label: "Lead", href: "#lead" },
       ]} />
       <FilterBar filters={["Waterfront","New Listings","Under $300k","Condos","Single Family","Golf Course"]} />
+      <FiltersChip filters={["Waterfront","New Listings","Under $300k","Condos","Single Family","Golf Course"]} />
 
       <Reveal>
       <section id="featured" className="relative rounded-3xl overflow-hidden scroll-mt-20">

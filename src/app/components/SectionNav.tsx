@@ -29,7 +29,7 @@ export default function SectionNav({ items }: { items: Item[] }) {
   }, [items])
 
   return (
-    <div className="sticky top-16 z-40">
+    <div className="hidden sm:block sticky top-16 z-40">
       <nav aria-label="Section navigation" className={`rounded-full border bg-white/80 backdrop-blur px-2 py-2 flex flex-wrap gap-2 justify-center ${scrolled ? "shadow-sm border-sand" : "border-sand"}`}>
         {items.map(it => {
           const is = active === it.href
