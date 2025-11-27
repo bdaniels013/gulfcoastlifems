@@ -28,7 +28,7 @@ export default function Page() {
           <Image src="/c21-header.png" alt="CENTURY 21 J. Carter & Company" width={140} height={36} />
           <div className="font-serif hidden sm:block">CENTURY 21 J. Carter & Company</div>
         </div>
-        <div>Office: (000) 000-0000</div>
+        <div>Direct: <a href="tel:+12282979775" className="text-aqua">(228) 297-9775</a></div>
         <div>Mary “Lizzie” Fontenelle, Realtor®</div>
       </div>
 

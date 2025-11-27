@@ -9,6 +9,7 @@ export default function Hero() {
         <div className="mt-6 flex flex-wrap gap-3">
           <Link href="/realestate" className="inline-flex rounded-full bg-navy text-white px-5 py-3 hover:bg-navy/90">Search Homes</Link>
           <a href="#contact" className="inline-flex rounded-full bg-aqua text-white px-5 py-3 hover:bg-aqua/80">Book a Call</a>
+          <a href="tel:+12282979775" className="inline-flex rounded-full border border-aqua text-aqua px-5 py-3 hover:bg-aqua/10">Call (228) 297-9775</a>
         </div>
       </div>
     </section>

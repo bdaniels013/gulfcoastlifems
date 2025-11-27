@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
           <div className="text-sm text-navy/70">Mary “Lizzie” Fontenelle, Realtor®</div>
           <div className="text-sm text-navy/60">Brokerage: CENTURY 21 J. Carter & Company</div>
-          <div className="text-sm text-navy/60">Office: (000) 000-0000</div>
+          <div className="text-sm text-navy/60">Direct: <a href="tel:+12282979775" className="text-aqua">(228) 297-9775</a></div>
         </div>
         <div className="text-sm text-navy/60">
           Equal Housing Opportunity. REALTOR®.
