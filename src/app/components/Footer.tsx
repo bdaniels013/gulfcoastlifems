@@ -13,6 +13,12 @@ export default function Footer() {
           <div className="text-sm text-navy/70">Mary “Lizzie” Fontenelle, Realtor®</div>
           <div className="text-sm text-navy/60">Brokerage: CENTURY 21 J. Carter & Company</div>
           <div className="text-sm text-navy/60">Direct: <a href="tel:+12282979775" className="text-aqua">(228) 297-9775</a></div>
+          <div className="text-sm text-navy/60">Office: <a href="tel:+12287313881" className="text-aqua">(228) 731-3881</a></div>
+          <address className="not-italic text-sm text-navy/60">
+            2137 East Pass Road<br />
+            Suite A<br />
+            Gulfport, MS 39507
+          </address>
         </div>
         <div className="text-sm text-navy/60">
           Equal Housing Opportunity. REALTOR®.

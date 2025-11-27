@@ -3,6 +3,8 @@ import { Playfair_Display, Inter } from "next/font/google"
 import "./globals.css"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import ContactBar from "./components/ContactBar"
+import BackToTop from "./components/BackToTop"
 
 const heading = Playfair_Display({ subsets: ["latin"], variable: "--font-heading" })
 const body = Inter({ subsets: ["latin"], variable: "--font-body" })
@@ -19,6 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="container">{children}</main>
         <Footer />
+        <ContactBar />
+        <BackToTop />
       </body>
     </html>
   )
