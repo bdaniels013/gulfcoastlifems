@@ -23,8 +23,8 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-6" aria-label="Primary">
           <Link href="/" className="text-navy/80 hover:text-navy">Home</Link>
           <Link href="/realestate" className="text-navy/80 hover:text-navy">Real Estate</Link>
-          <Link href="#" className="text-navy/80 hover:text-navy">Explore the Coast</Link>
-          <Link href="#" className="text-navy/80 hover:text-navy">Guides</Link>
+          <Link href="/#explore" className="text-navy/80 hover:text-navy">Explore the Coast</Link>
+          <Link href="/#guides" className="text-navy/80 hover:text-navy">Guides</Link>
           <Link href="#contact" className="inline-flex items-center rounded-full bg-gold/90 text-white px-4 py-2 hover:bg-gold">Contact</Link>
           <a href="tel:+12282979775" className="text-aqua hover:text-navy">(228) 297-9775</a>
         </nav>

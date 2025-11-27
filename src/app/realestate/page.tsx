@@ -2,13 +2,13 @@ import SectionTitle from "../components/SectionTitle"
 import ListingCard from "../components/ListingCard"
 import MetricCard from "../components/MetricCard"
 import LeadForm from "../components/LeadForm"
-import Image from "next/image"
 import Reveal from "../components/Reveal"
 import FilterBar from "../components/FilterBar"
 import InlineEmailForm from "../components/InlineEmailForm"
 import ValueEstimateForm from "../components/ValueEstimateForm"
 import Parallax from "../components/Parallax"
 import SectionNav from "../components/SectionNav"
+import Image from "next/image"
 
 export default function Page() {
   const listings = [
@@ -42,7 +42,11 @@ export default function Page() {
       </div>
 
       <Parallax intensity={0.08} className="relative rounded-3xl overflow-hidden">
-        <div className="bg-gradient-to-br from-sand via-white to-aqua/20 p-10 md:p-16">
+        <div className="absolute inset-0">
+          <Image src="/beau rivage sunset.jpg" alt="Beau Rivage at sunset" fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-white/60" />
+        </div>
+        <div className="relative bg-gradient-to-br from-sand via-white to-aqua/20 p-10 md:p-16">
           <h1 className="text-3xl md:text-4xl font-serif text-navy">Search Mississippi Gulf Coast Homes</h1>
           <p className="mt-2 text-navy/70">Real-time listings powered by IDX (coming soon).</p>
         </div>
