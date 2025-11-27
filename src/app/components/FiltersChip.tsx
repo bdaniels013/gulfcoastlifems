@@ -20,7 +20,10 @@ export default function FiltersChip({ filters }: { filters: string[] }) {
           <div className="absolute inset-0 bg-black/30" />
           <div className="absolute bottom-0 left-0 right-0" onClick={(e) => e.stopPropagation()}>
             <div className="rounded-t-2xl border-t border-sand bg-white p-4 shadow-xl">
-              <div className="text-navy font-serif text-lg">Filters</div>
+              <div className="flex items-center justify-between">
+                <div className="text-navy font-serif text-lg">Filters</div>
+                <button onClick={() => setOpen(false)} className="rounded-md border border-sand px-3 py-2" aria-label="Close filters">×</button>
+              </div>
               <div className="mt-3 flex flex-wrap gap-2">
                 {filters.map(f => {
                   const is = active.includes(f)

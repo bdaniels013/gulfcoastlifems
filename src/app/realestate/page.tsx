@@ -117,12 +117,12 @@ export default function Page() {
       </Reveal>
 
       <Reveal>
-      <section id="alerts" className="relative rounded-3xl overflow-hidden scroll-mt-20 mb-28">
+      <section id="alerts" className="relative rounded-3xl overflow-visible md:overflow-hidden scroll-mt-20 mb-28">
         <div className="absolute inset-0">
           <Image src="/pass harbor boats.jpg" alt="Pass Christian Harbor" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-white/80" />
         </div>
-        <div className="relative p-6 md:p-8 grid gap-6 md:grid-cols-2">
+        <div className="relative p-6 md:p-8 pb-12 grid gap-6 md:grid-cols-2">
         <div className="space-y-4 rounded-xl border border-sand bg-white p-4 shadow-sm">
           <SectionTitle title="Get Instant Alerts" subtitle="Be the first to know" />
           <InlineEmailForm />
@@ -136,12 +136,12 @@ export default function Page() {
       </Reveal>
 
       <Reveal>
-      <section id="lead" className="relative rounded-3xl overflow-hidden scroll-mt-20 mb-28">
+      <section id="lead" className="relative rounded-3xl overflow-visible md:overflow-hidden scroll-mt-20 mb-28">
         <div className="absolute inset-0">
           <Image src="/biloxi beach waves.jpg" alt="Biloxi waves" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-white/70" />
         </div>
-        <div className="relative p-6 md:p-8">
+        <div className="relative p-6 md:p-8 pb-12">
           <LeadForm cta="Get Custom Recommendations" />
         </div>
       </section>
