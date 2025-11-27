@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${heading.variable} ${body.variable}`}>
-      <body className="font-sans bg-sand text-navy">
+      <body className="font-sans bg-sand text-navy overflow-x-hidden">
         <Header />
         <main className="container pb-28 md:pb-0">{children}</main>
         <Footer />
