@@ -81,7 +81,7 @@ export default function Page() {
       <FilterBar filters={["Waterfront","New Listings","Under $300k","Condos","Single Family","Golf Course"]} />
 
       <Reveal>
-      <section id="featured" className="relative rounded-3xl overflow-hidden">
+      <section id="featured" className="relative rounded-3xl overflow-hidden scroll-mt-20">
         <div className="absolute inset-0">
           <Image src="/os bridge.jpg" alt="Ocean Springs Bridge" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-white/70" />
@@ -98,7 +98,7 @@ export default function Page() {
       </Reveal>
 
       <Reveal>
-      <section id="snapshot" className="relative rounded-3xl overflow-hidden">
+      <section id="snapshot" className="relative rounded-3xl overflow-hidden scroll-mt-20">
         <div className="absolute inset-0">
           <Image src="/willow tree.jpg" alt="Coastal willow" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-white/70" />
@@ -115,7 +115,7 @@ export default function Page() {
       </Reveal>
 
       <Reveal>
-      <section id="alerts" className="relative rounded-3xl overflow-hidden">
+      <section id="alerts" className="relative rounded-3xl overflow-hidden scroll-mt-20 mb-28">
         <div className="absolute inset-0">
           <Image src="/pass harbor boats.jpg" alt="Pass Christian Harbor" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-white/80" />
@@ -134,7 +134,7 @@ export default function Page() {
       </Reveal>
 
       <Reveal>
-      <section id="lead" className="relative rounded-3xl overflow-hidden">
+      <section id="lead" className="relative rounded-3xl overflow-hidden scroll-mt-20 mb-28">
         <div className="absolute inset-0">
           <Image src="/biloxi beach waves.jpg" alt="Biloxi waves" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-white/70" />

@@ -14,7 +14,7 @@ export default function FilterBar({ filters }: { filters: string[] }) {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
   return (
-    <div className="sticky top-16 z-40">
+    <div className="hidden sm:block sticky top-16 z-40">
       <div className={`rounded-full border bg-white/80 backdrop-blur px-2 py-2 flex flex-wrap gap-2 justify-center ${scrolled ? "shadow-sm border-sand" : "border-sand"}`}>
         {filters.map(f => {
           const is = active.includes(f)

@@ -13,7 +13,7 @@ export default function BackToTop() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-20 right-4 z-40 rounded-full bg-navy text-white px-4 py-2 shadow-lg hover:bg-navy/90"
+      className="fixed bottom-24 md:bottom-6 right-4 z-40 rounded-full bg-navy text-white px-4 py-2 shadow-lg hover:bg-navy/90"
       aria-label="Back to top"
     >
       Top

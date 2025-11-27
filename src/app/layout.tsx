@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${heading.variable} ${body.variable}`}>
       <body className="font-sans bg-sand text-navy">
         <Header />
-        <main className="container">{children}</main>
+        <main className="container pb-28 md:pb-0">{children}</main>
         <Footer />
         <ContactBar />
         <BackToTop />
