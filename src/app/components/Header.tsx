@@ -1,10 +1,12 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Header() {
   return (
     <header className="bg-white/80 backdrop-blur border-b border-sand sticky top-0 z-50">
       <div className="container flex items-center justify-between h-16">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-3">
+          <Image src="/logo.jpeg" alt="Gulf Coast Life logo" width={36} height={36} className="rounded-full" />
           <span className="text-2xl font-serif tracking-wide text-navy">Gulf Coast Life</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">

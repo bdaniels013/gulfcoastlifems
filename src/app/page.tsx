@@ -4,6 +4,7 @@ import CityCard from "./components/CityCard"
 import GuideCard from "./components/GuideCard"
 import LifestyleCard from "./components/LifestyleCard"
 import LeadForm from "./components/LeadForm"
+import Image from "next/image"
 
 export default function Page() {
   const cities = [
@@ -34,7 +35,9 @@ export default function Page() {
       <section>
         <SectionTitle title="Meet Lizzie" subtitle="Local expert, friendly guide, and your Gulf Coast Realtor®" />
         <div className="grid gap-8 md:grid-cols-3 items-center">
-          <div className="md:col-span-1 h-56 rounded-2xl bg-gradient-to-br from-sand to-aqua" />
+          <div className="md:col-span-1 relative h-56 rounded-2xl overflow-hidden">
+            <Image src="/lizzie-headshot.jpg" alt="Mary “Lizzie” Fontenelle headshot" fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" />
+          </div>
           <div className="md:col-span-2 space-y-4">
             <p className="text-navy/80">Mary “Lizzie” Fontenelle helps buyers and sellers across the Mississippi Gulf Coast with a modern, approachable style. She blends local knowledge with data-driven guidance to make each move confident and enjoyable.</p>
             <ul className="grid gap-2 text-navy/70">

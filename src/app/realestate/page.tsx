@@ -2,6 +2,7 @@ import SectionTitle from "../components/SectionTitle"
 import ListingCard from "../components/ListingCard"
 import MetricCard from "../components/MetricCard"
 import LeadForm from "../components/LeadForm"
+import Image from "next/image"
 
 export default function Page() {
   const listings = [
@@ -23,7 +24,10 @@ export default function Page() {
   return (
     <div className="space-y-12">
       <div className="bg-navy text-white rounded-xl p-4 text-sm flex flex-wrap gap-4 items-center justify-between">
-        <div className="font-serif">CENTURY 21 J. Carter & Company</div>
+        <div className="flex items-center gap-3">
+          <Image src="/c21-header.png" alt="CENTURY 21 J. Carter & Company" width={140} height={36} />
+          <div className="font-serif hidden sm:block">CENTURY 21 J. Carter & Company</div>
+        </div>
         <div>Office: (000) 000-0000</div>
         <div>Mary “Lizzie” Fontenelle, Realtor®</div>
       </div>
