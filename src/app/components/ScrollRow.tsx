@@ -25,7 +25,7 @@ export default function ScrollRow({ items }: Props) {
     <div className="relative">
       <div ref={ref} className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 [-webkit-overflow-scrolling:touch]">
         {items.map((it, idx) => (
-          <div key={idx} className="snap-start shrink-0 min-w-[80%] sm:min-w-[60%]">
+          <div key={idx} className="snap-start shrink-0 min-w-[85%] sm:min-w-[60%]">
             {it}
           </div>
         ))}
@@ -62,7 +62,7 @@ export default function ScrollRow({ items }: Props) {
           <ChevronRightIcon className="h-5 w-5 text-navy" />
         </button>
       </div>
-      <div className="mt-2 flex justify-center gap-2">
+      <div className="mt-3 flex justify-center gap-2">
         {items.map((_, i) => (
           <span key={i} className={`h-2 w-2 rounded-full ${index === i ? "bg-navy" : "bg-sand border border-sand"}`} />
         ))}

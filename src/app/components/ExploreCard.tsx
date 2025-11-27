@@ -4,7 +4,7 @@ type Props = { title: string; blurb: string; href?: string; imageSrc?: string }
 export default function ExploreCard({ title, blurb, href = "/realestate", imageSrc }: Props) {
   return (
     <div className="group rounded-xl bg-white border border-sand shadow-sm transition hover:shadow-lg hover:-translate-y-0.5 overflow-hidden">
-      <div className="relative h-36">
+      <div className="relative h-56 md:h-64">
         {imageSrc ? (
           <Image src={imageSrc} alt={title} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" />
         ) : (

@@ -81,29 +81,46 @@ export default function Page() {
       <FilterBar filters={["Waterfront","New Listings","Under $300k","Condos","Single Family","Golf Course"]} />
 
       <Reveal>
-      <section id="featured">
+      <section id="featured" className="relative rounded-3xl overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/os bridge.jpg" alt="Ocean Springs Bridge" fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-white/70" />
+        </div>
+        <div className="relative p-6 md:p-8">
         <SectionTitle title="Featured Listings" subtitle="Sample listings ready for IDX integration" />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {listings.map((l, i) => (
             <ListingCard key={i} price={l.price} beds={l.beds} baths={l.baths} sqft={l.sqft} city={l.city} />
           ))}
         </div>
+        </div>
       </section>
       </Reveal>
 
       <Reveal>
-      <section id="snapshot">
+      <section id="snapshot" className="relative rounded-3xl overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/willow tree.jpg" alt="Coastal willow" fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-white/70" />
+        </div>
+        <div className="relative p-6 md:p-8">
         <SectionTitle title="Market Snapshot" subtitle="Fast metrics for smarter decisions" />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {metrics.map((m) => (
             <MetricCard key={m.label} label={m.label} value={m.value} />
           ))}
         </div>
+        </div>
       </section>
       </Reveal>
 
       <Reveal>
-      <section id="alerts" className="grid gap-8 md:grid-cols-2">
+      <section id="alerts" className="relative rounded-3xl overflow-hidden grid gap-8 md:grid-cols-2">
+        <div className="absolute inset-0">
+          <Image src="/pass harbor boats.jpg" alt="Pass Christian Harbor" fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-white/70" />
+        </div>
+        <div className="relative p-6 md:p-8 grid gap-8 md:grid-cols-2">
         <div className="space-y-4">
           <SectionTitle title="Get Instant Alerts" subtitle="Be the first to know" />
           <InlineEmailForm />
@@ -112,12 +129,19 @@ export default function Page() {
           <SectionTitle title="Curious what your home is worth?" subtitle="Request a free value estimate" />
           <ValueEstimateForm />
         </div>
+        </div>
       </section>
       </Reveal>
 
       <Reveal>
-      <section id="lead">
-        <LeadForm cta="Get Custom Recommendations" />
+      <section id="lead" className="relative rounded-3xl overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/biloxi beach waves.jpg" alt="Biloxi waves" fill sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-white/70" />
+        </div>
+        <div className="relative p-6 md:p-8">
+          <LeadForm cta="Get Custom Recommendations" />
+        </div>
       </section>
       </Reveal>
     </div>

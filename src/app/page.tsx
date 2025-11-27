@@ -12,6 +12,7 @@ import Separator from "./components/Separator"
 import { AwardIcon, ShieldIcon } from "./components/icons"
 import ScrollRow from "./components/ScrollRow"
 import ExploreCard from "./components/ExploreCard"
+import SectionWrap from "./components/SectionWrap"
 
 export default function Page() {
   const cities = [
@@ -58,8 +59,10 @@ export default function Page() {
 
       <Reveal>
       <section>
-        <SectionTitle title="Get the Gulf Coast Buyer Guide" subtitle="Tell us what you’re looking for" />
-        <LeadForm cta="Get Custom Home Recommendations" />
+        <SectionWrap src="/pass pier.jpg" overlay="bg-white/70">
+          <SectionTitle title="Get the Gulf Coast Buyer Guide" subtitle="Tell us what you’re looking for" />
+          <LeadForm cta="Get Custom Home Recommendations" />
+        </SectionWrap>
       </section>
       </Reveal>
 
@@ -85,8 +88,8 @@ export default function Page() {
             "/pass pier.jpg",
             "/pass harbor boats.jpg",
           ].map((src) => (
-            <div key={src} className="relative h-40 rounded-xl overflow-hidden">
-              <Image src={src} alt={src.replace("/", "")} fill sizes="100vw" className="object-cover" />
+            <div key={src} className="relative h-64 md:h-80 rounded-xl overflow-hidden bg-white">
+              <Image src={src} alt={src.replace("/", "")} fill sizes="100vw" className="object-contain" />
             </div>
           ))}
         />
@@ -97,8 +100,9 @@ export default function Page() {
 
       <Reveal>
       <section>
-        <SectionTitle title="Awards & Recognition" subtitle="Consistency, service, and results" />
-        <div className="flex flex-wrap gap-2">
+        <SectionWrap src="/sunrise-at-bay-st-louis.jpg" overlay="bg-white/70">
+          <SectionTitle title="Awards & Recognition" subtitle="Consistency, service, and results" />
+          <div className="flex flex-wrap gap-2">
           {[
             "2024 — Quality Service Pinnacle Producer",
             "2023 — Quality Service Pinnacle Producer",
@@ -107,7 +111,8 @@ export default function Page() {
           ].map((a) => (
             <Badge key={a} label={a} variant="accent" icon={<AwardIcon className="h-3.5 w-3.5" />} />
           ))}
-        </div>
+          </div>
+        </SectionWrap>
       </section>
       </Reveal>
 
@@ -115,8 +120,9 @@ export default function Page() {
 
       <Reveal>
       <section>
-        <SectionTitle title="Professional Designations" subtitle="Training and expertise you can trust" />
-        <div className="flex flex-wrap gap-2">
+        <SectionWrap src="/os bridge smooth water.png" overlay="bg-white/70">
+          <SectionTitle title="Professional Designations" subtitle="Training and expertise you can trust" />
+          <div className="flex flex-wrap gap-2">
           {[
             "NAR Commitment to Excellence",
             "Accredited Buyer Representative Manager",
@@ -125,7 +131,8 @@ export default function Page() {
           ].map((d) => (
             <Badge key={d} label={d} icon={<ShieldIcon className="h-3.5 w-3.5" />} />
           ))}
-        </div>
+          </div>
+        </SectionWrap>
       </section>
       </Reveal>
 
@@ -133,57 +140,67 @@ export default function Page() {
 
       <Reveal>
       <section>
-        <SectionTitle title="Contact & Office" subtitle="Reach out anytime" />
-        <ContactCard />
+        <SectionWrap src="/biloxi lighthouse.jpg" overlay="bg-white/70">
+          <SectionTitle title="Contact & Office" subtitle="Reach out anytime" />
+          <ContactCard />
+        </SectionWrap>
       </section>
       </Reveal>
 
       <Reveal>
       <section id="explore">
-        <SectionTitle title="Explore the Coast" subtitle="Beaches, food, culture, and family fun" />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {explore.map((x) => (
-            <ExploreCard key={x.title} title={x.title} blurb={x.blurb} imageSrc={x.image} />
-          ))}
-        </div>
+        <SectionWrap src="/gulfport harbor sunset.jpg">
+          <SectionTitle title="Explore the Coast" subtitle="Beaches, food, culture, and family fun" />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {explore.map((x) => (
+              <ExploreCard key={x.title} title={x.title} blurb={x.blurb} imageSrc={x.image} />
+            ))}
+          </div>
+        </SectionWrap>
       </section>
       </Reveal>
 
       <Reveal>
       <section>
-        <SectionTitle title="Discover the Mississippi Gulf Coast" subtitle="Explore top areas and neighborhoods" />
-        <div className="hidden md:grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {cities.map((c) => (
-            <CityCard key={c.city} city={c.city} blurb={c.blurb} imageSrc={c.image} />
-          ))}
-        </div>
-        <div className="md:hidden">
-          <ScrollRow items={cities.map((c) => (
-            <CityCard key={c.city} city={c.city} blurb={c.blurb} imageSrc={c.image} />
-          ))} />
-        </div>
+        <SectionWrap src="/bay st louis aerial.jpg" overlay="bg-white/70">
+          <SectionTitle title="Discover the Mississippi Gulf Coast" subtitle="Explore top areas and neighborhoods" />
+          <div className="hidden md:grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {cities.map((c) => (
+              <CityCard key={c.city} city={c.city} blurb={c.blurb} imageSrc={c.image} />
+            ))}
+          </div>
+          <div className="md:hidden">
+            <ScrollRow items={cities.map((c) => (
+              <CityCard key={c.city} city={c.city} blurb={c.blurb} imageSrc={c.image} />
+            ))} />
+          </div>
+        </SectionWrap>
       </section>
       </Reveal>
 
       <Reveal>
       <section id="guides">
-        <SectionTitle title="Guides" subtitle="Homebuying, selling, and investing on the Gulf Coast" />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {guides.map((g) => (
-            <GuideCard key={g.title} title={g.title} blurb={g.blurb} />
-          ))}
-        </div>
+        <SectionWrap src="/bay bridge portrait.jpg">
+          <SectionTitle title="Guides" subtitle="Homebuying, selling, and investing on the Gulf Coast" />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {guides.map((g) => (
+              <GuideCard key={g.title} title={g.title} blurb={g.blurb} />
+            ))}
+          </div>
+        </SectionWrap>
       </section>
       </Reveal>
 
       <Reveal>
       <section>
-        <SectionTitle title="Lifestyle & Gulf Coast Living" subtitle="Beaches, food, events, and everyday joy" />
-        <div className="grid gap-6 md:grid-cols-3">
-          {lifestyle.map((l) => (
-            <LifestyleCard key={l.title} title={l.title} blurb={l.blurb} />
-          ))}
-        </div>
+        <SectionWrap src="/jones park palm trees.jpg" overlay="bg-white/60">
+          <SectionTitle title="Lifestyle & Gulf Coast Living" subtitle="Beaches, food, events, and everyday joy" />
+          <div className="grid gap-6 md:grid-cols-3">
+            {lifestyle.map((l) => (
+              <LifestyleCard key={l.title} title={l.title} blurb={l.blurb} />
+            ))}
+          </div>
+        </SectionWrap>
       </section>
       </Reveal>
 
