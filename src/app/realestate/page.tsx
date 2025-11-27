@@ -115,17 +115,17 @@ export default function Page() {
       </Reveal>
 
       <Reveal>
-      <section id="alerts" className="relative rounded-3xl overflow-hidden grid gap-8 md:grid-cols-2">
+      <section id="alerts" className="relative rounded-3xl overflow-hidden">
         <div className="absolute inset-0">
           <Image src="/pass harbor boats.jpg" alt="Pass Christian Harbor" fill sizes="100vw" className="object-cover" />
-          <div className="absolute inset-0 bg-white/70" />
+          <div className="absolute inset-0 bg-white/80" />
         </div>
-        <div className="relative p-6 md:p-8 grid gap-8 md:grid-cols-2">
-        <div className="space-y-4">
+        <div className="relative p-6 md:p-8 grid gap-6 md:grid-cols-2">
+        <div className="space-y-4 rounded-xl border border-sand bg-white p-4 shadow-sm">
           <SectionTitle title="Get Instant Alerts" subtitle="Be the first to know" />
           <InlineEmailForm />
         </div>
-        <div className="space-y-4">
+        <div className="space-y-4 rounded-xl border border-sand bg-white p-4 shadow-sm">
           <SectionTitle title="Curious what your home is worth?" subtitle="Request a free value estimate" />
           <ValueEstimateForm />
         </div>

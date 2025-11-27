@@ -12,6 +12,21 @@ const body = Inter({ subsets: ["latin"], variable: "--font-body" })
 export const metadata: Metadata = {
   title: "Gulf Coast Life | Mississippi Gulf Coast Real Estate",
   description: "Modern coastal real estate and lifestyle hub by Mary “Lizzie” Fontenelle.",
+  metadataBase: new URL("https://gulfcoastlifems.vercel.app"),
+  icons: {
+    icon: "/bay bridge portrait.jpg",
+    shortcut: "/bay bridge portrait.jpg",
+    apple: "/bay bridge portrait.jpg",
+  },
+  openGraph: {
+    title: "Gulf Coast Life MS — Coastal Real Estate",
+    description: "Explore homes, guides, and coastal living across the Mississippi Gulf Coast.",
+    images: ["/bay st louis aerial.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/bay st louis aerial.jpg"],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
