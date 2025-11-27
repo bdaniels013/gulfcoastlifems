@@ -122,12 +122,12 @@ export default function Page() {
           <Image src="/pass harbor boats.jpg" alt="Pass Christian Harbor" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-white/80" />
         </div>
-        <div className="relative p-5 md:p-8 pb-16 grid gap-6 md:grid-cols-2 justify-items-center md:justify-items-stretch max-w-3xl mx-auto">
-        <div className="space-y-4 rounded-xl border border-sand bg-white p-3 sm:p-4 shadow-sm w-full max-w-sm sm:max-w-md">
+        <div className="relative p-5 md:p-8 pb-24 grid gap-6 md:grid-cols-2 justify-items-center md:justify-items-stretch max-w-3xl mx-auto">
+        <div className="space-y-4 rounded-xl border border-sand bg-white p-3 sm:p-4 shadow-sm w-full max-w-[21rem] sm:max-w-md">
           <SectionTitle title="Get Instant Alerts" subtitle="Be the first to know" />
           <InlineEmailForm />
         </div>
-        <div className="space-y-4 rounded-xl border border-sand bg-white p-3 sm:p-4 shadow-sm w-full max-w-sm sm:max-w-md">
+        <div className="space-y-4 rounded-xl border border-sand bg-white p-3 sm:p-4 shadow-sm w-full max-w-[21rem] sm:max-w-md">
           <SectionTitle title="Curious what your home is worth?" subtitle="Request a free value estimate" />
           <ValueEstimateForm />
         </div>
@@ -141,8 +141,8 @@ export default function Page() {
           <Image src="/biloxi beach waves.jpg" alt="Biloxi waves" fill sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-white/70" />
         </div>
-        <div className="relative p-5 md:p-8 pb-16 max-w-3xl mx-auto">
-          <div className="max-w-sm sm:max-w-md mx-auto w-full">
+        <div className="relative p-5 md:p-8 pb-24 max-w-3xl mx-auto">
+          <div className="max-w-[21rem] sm:max-w-md mx-auto w-full">
             <LeadForm cta="Get Custom Recommendations" />
           </div>
         </div>
